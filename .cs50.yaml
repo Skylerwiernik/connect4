@@ -2,6 +2,26 @@ check50:
   checks:
     Horizontal win:
       - run: python3 connect4.py
-        stdin: a\na\nb\nB\nc\nC\nD
+        stdin: |
+          a
+          a
+          b
+          B
+          c
+          C
+          D
         stdout: Congraduations player 1! You won!
         exit: 0
+    Horizontal win 2:
+      - run: python3 connect4.py
+        stdin: |
+          a
+          a
+          b
+          B
+          c
+          C
+          a
+          d
+          a
+          d
