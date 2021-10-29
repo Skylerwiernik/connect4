@@ -15,3 +15,5 @@ check50:
       - run: python3 connect4.py
         stdin: a\na\nb\nB\nc\nC\nD
         stdout: Congraduations player 1! You won!
+        exit: 0
+      
