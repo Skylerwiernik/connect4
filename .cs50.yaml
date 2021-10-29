@@ -18,21 +18,21 @@ check50:
           stdin: a\ng\nf\ng\nd\ng\nd\ng
           stdout: Congraduations player 2! You won!
           exit: 0
-    # Vertical win 2:
-    Vertical win 2:
-      - run: python3 connect4.py
-          stdin: a\na\nb\na\nb\na\nb\na
-          stdout: Congraduations player 2! You won!
-          exit: 0
-    # Diagonal win 1
-    Diagonal win 1:
-      - run: python3 connect4.py
-          stdin: D\nE\nE\nF\nF\nG\nF\nG\nG\nA\nG
-          stdout: Congraduations player 1! You won!
-          exit: 0
-    # Diagonal win 2
-    Diagonal win 2:
-      - run: python3 connect4.py
-          stdin: A\nA\nA\nA\nA\nB\nB\nB\nB\nC\nC\nD\nC\nG\nD
-          stdout: Congraduations player 1! You won!
-          exit: 0
+#     # Vertical win 2:
+#     Vertical win 2:
+#       - run: python3 connect4.py
+#           stdin: a\na\nb\na\nb\na\nb\na
+#           stdout: Congraduations player 2! You won!
+#           exit: 0
+#     # Diagonal win 1
+#     Diagonal win 1:
+#       - run: python3 connect4.py
+#           stdin: D\nE\nE\nF\nF\nG\nF\nG\nG\nA\nG
+#           stdout: Congraduations player 1! You won!
+#           exit: 0
+#     # Diagonal win 2
+#     Diagonal win 2:
+#       - run: python3 connect4.py
+#           stdin: A\nA\nA\nA\nA\nB\nB\nB\nB\nC\nC\nD\nC\nG\nD
+#           stdout: Congraduations player 1! You won!
+#           exit: 0
