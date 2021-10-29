@@ -1,0 +1,17 @@
+check50:
+  checks:
+    Makes board:
+      - run: python3 connect4.py
+        stdout: |
+          A  B  C  D  E  F  G
+          🟤 🟤 🟤 🟤 🟤 🟤 🟤
+          🟤 🟤 🟤 🟤 🟤 🟤 🟤
+          🟤 🟤 🟤 🟤 🟤 🟤 🟤
+          🟤 🟤 🟤 🟤 🟤 🟤 🟤
+          🟤 🟤 🟤 🟤 🟤 🟤 🟤
+          🟤 🟤 🟤 🟤 🟤 🟤 🟤
+      exit: 0
+    Horizontal win:
+      - run: python3 connect4.py
+        stdin: a\na\nb\nB\nc\nC\nD
+        stdout: Congraduations player 1! You won!
