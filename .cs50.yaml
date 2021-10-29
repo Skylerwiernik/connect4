@@ -1,27 +1,14 @@
 check50:
   checks:
+    # First check
     Horizontal win:
       - run: python3 connect4.py
-        stdin: |
-          a
-          a
-          b
-          B
-          c
-          C
-          D
+        stdin: a\na\nb\nB\nc\nC\nD
         stdout: Congraduations player 1! You won!
         exit: 0
+    # Second check
     Horizontal win 2:
       - run: python3 connect4.py
-        stdin: |
-          a
-          a
-          b
-          B
-          c
-          C
-          a
-          d
-          a
-          d
+        stdin: a\na\nb\nB\nc\nC\na\nd\na\nd
+        stdout: Congraduations player 2! You won!
+        exit: 0
