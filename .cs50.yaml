@@ -39,5 +39,5 @@ check50:
     # Full row
     Full row:
       - run: python3 connect4.py
-        stdin: A\nA\nA\nA\nA\nA\n
+        stdin: A\nA\nA\nA\nA\nA\na
         stdout: That row is full!
