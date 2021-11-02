@@ -36,8 +36,3 @@ check50:
         stdin: A\nA\nA\nA\nA\nB\nB\nB\nB\nC\nC\nD\nC\nG\nD
         stdout: Congraduations player 1! You won!
         exit: 0
-    # Full row
-    Full row:
-      - run: python3 connect4.py
-        stdin: A\nA\nA\nA\nA\nA\na
-        stdout: That row is full!
